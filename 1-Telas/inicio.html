@@ -14,13 +14,23 @@
 	<script type="../2-Estilos/js/bootstrap.min.js"></script>
 	<script type="../2-Estilos/js/bootstrap.bundle.min.js"></script>
 	<script type="../2-Estilos/js/bootstrap.bundle.min.js.map"></script>
-	<script type="../3-Scripts/dagAndDrop.js"></script>
+	
+	<script>
+		function handleDragStart(e) {
+		  this.style.opacity = '0.4';  // this / e.target is the source node.
+		}
 
-	<div class="col-lg-6" draggable="true">
+		var cols = document.querySelectorAll('#columns .column');
+		[].forEach.call(cols, function(col) {
+		  col.addEventListener('dragstart', handleDragStart, false);
+		});
+	</script>
+
+	<div class="column" draggable="true">
 		TESTE 1
 	</div>
 
-	<div class="col-lg-6" draggable="true">
+	<div class="column" draggable="true">
 		TESTE 2
 	</div>
 
