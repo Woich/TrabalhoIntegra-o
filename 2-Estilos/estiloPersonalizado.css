@@ -47,3 +47,7 @@
   -moz-border-radius-topright: 10px;
   border-top-right-radius: 10px;
 }
+
+.column.over {
+  border: 2px dashed #000;
+}
