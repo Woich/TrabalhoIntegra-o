@@ -19,15 +19,8 @@
 	<title>Apresentação da Pesquisa</title>
 </head>
 <body>
-
-	<div id="columns">
-	  <div class="column" draggable="true" ondragstart="handleDragStart(event);" ondrop="handleDrop(event);" ondragover="handleDragOver(event);"><header>A</header></div>
-	  
-	  <div class="column" draggable="true" ondragstart="handleDragStart(event);" ondrop="handleDrop(event);" ondragover="handleDragOver(event);"><header>B</header></div>
+	 <p id="p1" draggable="true" ondragstart="dragstart_handler(event);">This element is draggable.</p>
 	 
-	  <div class="column" draggable="true" ondragstart="handleDragStart(event);" ondrop="handleDrop(event);" ondragover="handleDragOver(event);"><header>C</header></div>
-
-	</div>
-
+	 <div id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">Drop Zone</div>
 </body>
 </html>
