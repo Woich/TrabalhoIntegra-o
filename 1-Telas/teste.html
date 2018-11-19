@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="charset" content="utf-8">
+
+	<!-- IMPORTANDO O JQUERY -->
+		<script src="../3-Scripts/jquery/dist/jquery.js" type="text/javascript"></script>
+
+	<!-- IMPORTANDO OS ESTILOS DO BOOTSTRAP -->
+		<link rel="stylesheet" href="../2-Estilos/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../2-Estilos/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="../2-Estilos/css/bootstrap.min.css.map">
+		<link rel="stylesheet" href="../2-Estilos/estiloPersonalizado.css">
+
+	<!-- IMPORTANDO OS SCRIPTS DO BOOTSTRAP -->	
+		<script src="../2-Estilos/js/bootstrap.min.js.map" type="text/javascript"></script>
+		<script src="../2-Estilos/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../2-Estilos/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+		<script src="../2-Estilos/js/bootstrap.bundle.min.js.map" type="text/javascript"></script>
+
+	<!-- IMPORTANDO O DRAG AND DROP -->
+		<script src="../3-Scripts/dragAndDrop.js" type="text/javascript"></script>
+
+		<title>Apresentação da Pesquisa</title>
+	</head>
+	<body>
+
+ 		<p id="p1" draggable="true" ondragstart="dragstart_handler(event);">This element is draggable.</p>
+
+ 		<div id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">Drop Zone</div>
+
+	</body>
+</html>
