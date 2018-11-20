@@ -1,5 +1,6 @@
 .cardPergunta{
   margin: 5px;
+  font-size: 10pt;
 }
 
 .cabecalho{
@@ -20,6 +21,6 @@
   margin-bottom: 5px;
 }
 
-.divTarget div{
+.divTargetInput{
   min-height: 100px;
 }
